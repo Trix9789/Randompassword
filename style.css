@@ -1,0 +1,85 @@
+body{
+    background: #1C1C1C;
+}
+
+.box{
+    background-color:#ECFDF5 ;
+    width: 550px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+}
+
+#content{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 52px;
+
+}
+
+#heading{
+    margin: 0;
+    width: 332px;
+    color:#2B283A;
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    letter-spacing: -2px;
+    line-height: 40px;
+}
+
+#Supportingtext{
+    margin: 10px 0 0;
+    color: #6B7280;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+
+}
+
+button{
+   margin-top: 51px;
+   color: var(--white, #FFF);
+   font-family: Inter;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   padding: 9px 17px 9px 15px;
+   gap: 12px;
+   border-radius: 6px;
+   background: #10B981;
+   border:#10B981;;
+   cursor: pointer;
+   
+}
+
+#pass-box{
+    margin: 70px 0 0;
+    display: flex;
+    text-align: center;
+}
+
+#pass-1{
+   width: 180px;
+   height: 40px;
+   background-color: #273549;
+   border-radius: 6px;
+   color: #5DEF92;
+   line-height: 32px;
+   font-size: 16px;
+   padding: 4px 16px 3px 15px;
+   
+}
+
+#pass-2{
+    margin-left: 24px;
+    width: 180px;
+    height: 40px;
+    background-color: #273549;
+    border-radius: 6px;
+    color: #5DEF92;
+    line-height: 32px;
+    font-size: 16px;
+    padding: 4px 16px 3px 15px;
+}   
