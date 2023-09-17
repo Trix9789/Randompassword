@@ -15,6 +15,9 @@ const characters4 =["~","`","!","@","#","$","%","^","&",
 "*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"]
 
+passLen.addEventListener("keydown", function (e) {
+    e.preventDefault(); // Prevent manual input
+  });
 
 
 function randomPassword(){
