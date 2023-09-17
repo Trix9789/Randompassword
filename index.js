@@ -4,6 +4,7 @@ let pass2 = document.getElementById("pass-2")
 let numCheck = document.getElementById("pass-num")
 let capCheck = document.getElementById("pass-cap")
 
+let passLen = document.getElementById("length")
 
 const characters1 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U",
 "V","W","X","Y","Z"]
@@ -19,8 +20,20 @@ const characters4 =["~","`","!","@","#","$","%","^","&",
 function randomPassword(){
     pass1.textContent = ""
     pass2.textContent = ""
+    let passCount = passLen.value
+
+    if (capCheck.checked === true && numCheck.checked === false){
+            passCount = (passCount - 1)
+        }
+    else if (capCheck.checked === true && numCheck.checked === true){
+            passCount = (passCount - 2)
+        }
+        
+     else if (capCheck.checked === false && numCheck.checked === true){
+            passCount = (passCount - 2)
+        }
     
-    for (let i = 0; i < 10; i++){
+    for (let i = 0; i < passCount-1; i++){
         let pasGen1 = Math.floor(Math.random()*characters2.length)
         pass1.textContent +=  characters2[pasGen1]
         let pasGen2 = Math.floor(Math.random()*characters2.length)
