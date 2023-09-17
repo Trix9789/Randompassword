@@ -30,7 +30,7 @@ function randomPassword(){
         }
         
      else if (capCheck.checked === false && numCheck.checked === true){
-            passCount = (passCount - 2)
+            passCount = (passCount - 1)
         }
     
     for (let i = 0; i < passCount-1; i++){
