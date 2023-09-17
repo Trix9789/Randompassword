@@ -13,13 +13,28 @@
 <body>
   <div class="box">
     <div id="content">
+        <div>
         <h1 id="heading">Generate a random password</h1>
         <h3 id="Supportingtext">Never use an insecure password again.</h3>
+        </div>
+        <div class="input-container">
+            <!-- <label for="pas-len">Password Length(4 to 13 characters)</label>
+            <input type="number" id="length" name="pas-len" required minlength="4" maxlength="13"/> -->
+            <label for="length">Select Password length(4-13 characters)</label>
+            <input type="number" id="length" name="length" min="4" max="13">
+            <label for="symbol-num"></label>
+            <label for="pass-num">Select for Numeric</label>
+            <input type="checkbox" id="pass-num">
+            <label for="pass-cap">Select for Capital Letter</label>
+            <input type="checkbox" id="pass-cap">
+        </div>
+        <div>
+            
         <button onclick="randomPassword()">Generate passwords</button>
-
+        </div>
         <div id="pass-box">
-            <div id="pass-1">TDYUTUBKJNL</div>
-            <div id="pass-2">FDGVVJBKNL</div>
+            <div id="pass-1">kyznwksonaF9:</div>
+            <div id="pass-2">eloffxaoqvL2}</div>
         </div>
      </div>
   </div>

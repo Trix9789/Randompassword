@@ -13,7 +13,7 @@ body{
 
 #content{
     position: absolute;
-    margin-top: 115px;
+    margin-top: 80px;
     margin-left: 52px;
 
 }
@@ -38,8 +38,25 @@ body{
 
 }
 
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin: 10px 0 0;
+    color: #6B7280;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400
+}
+
+#length{
+    width: 100px;
+}
 button{
-   margin-top: 51px;
+    margin-top: 20px;
    color: var(--white, #FFF);
    font-family: Inter;
    font-size: 16px;
@@ -51,16 +68,19 @@ button{
    background: #10B981;
    border:#10B981;;
    cursor: pointer;
-   
+
 }
 
-#pass-box{
-    margin: 70px 0 0;
+
+#pass-box {
+
+    margin-top: 50px;
     display: flex;
-    text-align: center;
+    align-items: center;
 }
 
 #pass-1{
+   text-align: center;
    width: 180px;
    height: 40px;
    background-color: #273549;
@@ -69,10 +89,11 @@ button{
    line-height: 32px;
    font-size: 16px;
    padding: 4px 16px 3px 15px;
-   
+
 }
 
 #pass-2{
+    text-align: center;
     margin-left: 24px;
     width: 180px;
     height: 40px;
@@ -82,4 +103,9 @@ button{
     line-height: 32px;
     font-size: 16px;
     padding: 4px 16px 3px 15px;
-}   
+}
+
+
+#pass-num{
+    background-color: blue;
+}

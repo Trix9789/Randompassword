@@ -1,7 +1,8 @@
 let pass1 = document.getElementById("pass-1")
 let pass2 = document.getElementById("pass-2")
 
-
+let numCheck = document.getElementById("pass-num")
+let capCheck = document.getElementById("pass-cap")
 
 
 const characters1 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U",
@@ -27,23 +28,28 @@ function randomPassword(){
     }
 
     for (let i=0; i < 1; i++){
+        if(capCheck.checked === true){
         let pasGen1 = Math.floor(Math.random()*characters1.length)
         pass1.textContent +=  characters1[pasGen1]
         let pasGen2 = Math.floor(Math.random()*characters1.length)
-        pass2.textContent +=  characters1[pasGen2]
+        pass2.textContent +=  characters1[pasGen2]}
+        else i =1;
     }
 
     for (let i=0; i < 1; i++){
+        if (numCheck.checked === true){
         let pasGen1 = Math.floor(Math.random()*characters3.length)
         pass1.textContent +=  characters3[pasGen1]
         let pasGen2 = Math.floor(Math.random()*characters3.length)
-        pass2.textContent +=  characters3[pasGen2]
+        pass2.textContent +=  characters3[pasGen2]}
+        else i = 1;
     }
 
     for (let i=0; i < 1; i++){
+      {
         let pasGen1 = Math.floor(Math.random()*characters4.length)
         pass1.textContent +=  characters4[pasGen1]
         let pasGen2 = Math.floor(Math.random()*characters4.length)
-        pass2.textContent +=  characters4[pasGen2]
+        pass2.textContent +=  characters4[pasGen2]}
     }
 }
